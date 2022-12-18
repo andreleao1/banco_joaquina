@@ -16,7 +16,7 @@ public class BancoJoaquinaMain {
 
 			switch (opcaoSelecionada) {
 			case 1:
-				Conta conta = new Conta();
+			Conta conta = new Conta();
 				if(contas.isEmpty()) {
 					conta.setNumeroConta("1");
 				} else {
@@ -35,7 +35,31 @@ public class BancoJoaquinaMain {
 				System.out.println("Transferência selecionada");
 				break;
 			case 5:
+			
+			    
 				System.out.println("Consultar saldo selecionado.");
+
+			
+
+			Scanner consulta = new Scanner(System.in);
+			System.out.println(" Banco Joaquina por favor informe sua Conta : ");
+			
+			contas.forEach(Conta -> {
+				if(Conta.getSaldo().equals("1")); {
+					System.out.println(Conta.toString());
+
+			}});
+			
+			
+				
+				
+				System.out.println(
+					" Operacao Realizada com Sucesso! ");
+					
+		
+				System.out.println("  Deseja algo mais ? \nDigite: \n\n1 - Abrir conta \n2 - Depósito \n3 - Saque \n4 - Transferência \n5 - Consultar saldo \n6 - Encerrar");
+								
+						
 				break;
 			case 6:
 				System.out.println("Obrigado pela preferência!");
@@ -48,3 +72,4 @@ public class BancoJoaquinaMain {
 		}
 	}
 }
+
